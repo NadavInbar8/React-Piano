@@ -1,0 +1,41 @@
+// Flex Helpers
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+// for text areas
+.normalize-text {
+  white-space: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
