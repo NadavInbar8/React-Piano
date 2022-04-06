@@ -35,7 +35,7 @@ const Piano = () => {
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('keyup', handleKeyUp);
-  });
+  }, []);
 
   const playNote = (note) => {
     if (note) {
