@@ -4,9 +4,17 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: rgb(28, 28, 28);
   h1 {
     color: whitesmoke;
+    margin: 20px;
+  }
+  h3 {
+    color: whitesmoke;
+    background-color: rgba(105, 105, 105, 0.472);
+    padding: 10px;
+    border-radius: 6px;
   }
 }
