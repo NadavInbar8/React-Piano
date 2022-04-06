@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from 'react';
 import Key from './Key';
 import { NOTES, VALID_KEYS, NOTE_TO_KEY, KEY_TO_NOTE } from './consts.js';
@@ -32,11 +33,6 @@ const sounds = {
 const Piano = () => {
   const [pressedKeys, setPressedKeys] = useState([]);
 
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('keyup', handleKeyUp);
-  }, []);
-
   const playNote = (note) => {
     if (note) {
       // const noteU = note.toUpperCase();
@@ -64,6 +60,11 @@ const Piano = () => {
     setPressedKeys((prevState) => [...prevState, ...updatedPressedKeys]);
     playNote(KEY_TO_NOTE[key]);
   };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
+  }, []);
 
   return (
     <div className='piano flex'>
