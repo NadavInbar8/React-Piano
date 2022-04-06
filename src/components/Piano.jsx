@@ -35,11 +35,11 @@ const Piano = () => {
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('keyup', handleKeyUp);
-  }, []);
+  });
 
   const playNote = (note) => {
     if (note) {
-      const noteU = note.toUpperCase();
+      // const noteU = note.toUpperCase();
       const noteAudio = new Audio(sounds[note]);
       noteAudio.play();
     }
